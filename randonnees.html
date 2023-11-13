@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <script>
+        function includeHTML() {
+          var z, i, elmnt, file, xhttp;
+          /*loop through a collection of all HTML elements:*/
+          z = document.getElementsByTagName("*");
+          for (i = 0; i < z.length; i++) {
+            elmnt = z[i];
+            /*search for elements with a certain atrribute:*/
+            file = elmnt.getAttribute("w3-include-html");
+            if (file) {
+              /*make an HTTP request using the attribute value as the file name:*/
+              xhttp = new XMLHttpRequest();
+              xhttp.onreadystatechange = function() {
+                if (this.readyState == 4) {
+                  if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+                  if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+                  /*remove the attribute, and call this function once more:*/
+                  elmnt.removeAttribute("w3-include-html");
+                  includeHTML();
+                }
+              }      
+              xhttp.open("GET", file, true);
+              xhttp.send();
+              /*exit the function:*/
+              return;
+            }
+          }
+        };
+    </script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Randonnées à proximité de Marseille</title>
+    <!-- Vous pouvez ajouter un lien vers une feuille de style CSS ici -->
+</head>
+<body>
+
+    <div w3-include-html="./header.html">.</div>
+
+    <section>
+        <h2>Liste des randonnées</h2>
+        <ul>
+            <li><strong>Randonnée 1:</strong> Sentier des Calanques</li>
+            <li><strong>Randonnée 2:</strong> Massif de l'Etoile</li>
+            <li><strong>Randonnée 3:</strong> Parc national des Calanques</li>
+            <!-- Ajoutez d'autres randonnées selon vos besoins -->
+        </ul>
+    </section>
+
+    <section>
+        <a href="https://www.calanques-parcnational.fr/fr/balades-et-randonnees-dans-les-calanques-de-marseille-cassis-la-ciotat" target="_blank">Parc national des calanques</a>
+        <a href="https://www.bouches-du-rhone.gouv.fr/Actions-de-l-Etat/Agriculture-foret-et-developpement-rural/Foret/Acces-aux-massifs/Acces-aux-massifs-forestiers-des-Bouches-du-Rhone2" target="_blank">Accès aux massifs forestiers des Bouches-du-Rhône</a>
+    </section>
+
+    <div w3-include-html="footer.html">.</div>
+
+    <script>
+        includeHTML();
+    </script>
+
+</body>
+</html>
