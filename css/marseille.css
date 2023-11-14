@@ -5,22 +5,47 @@
 }
 
 /*police*/
+@font-face {
+    font-family: quattro;
+    src: url(fonts/QuattrocentoSans-Bold.ttf);
+}
+@font-face {
+  font-family: kanit;
+  src: url(fonts/Kanit-Bold.ttf);
+}
+@font-face {
+  font-family: martel;
+  src: url(fonts/MartelSans-Regular.ttf);
+}
+
+h1{
+    font-family: quattro;
+    color: #0A6DAA;
+    font-size: 75px;
+}
+
+h2, h3, h4, h5, h6{font-family: kanit;}
+
+h2{
+    font-size: 35px;
+}
+p{
+    font-family: martel;
+    font-size: 15px;
+}
 
 /*Body*/
 
 .body{
     background-color: white;
-
 }
 
-h1{
-    color: #0A6DAA;
-    font-size: 75px;
-}
-h2{
-    font-size: 35px;
-}
-p{
-    font-size: 15px;
 
+img.standard{
+    width:500px;
+    margin:auto;
+}
+img.mini{
+    width:250px;
+    margin:auto;
 }
