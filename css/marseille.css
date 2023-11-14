@@ -4,6 +4,12 @@
     padding: 0;
 }
 
+a{
+    text-decoration: none;
+}
+iframe{
+    width:100%;
+}
 /*police*/
 @font-face {
     font-family: quattro;
@@ -24,7 +30,10 @@ h1{
     font-size: 75px;
 }
 
-h2, h3, h4, h5, h6{font-family: kanit;}
+h2, h3, h4, h5, h6{
+    font-family: kanit;
+    color: #0A6DAA;
+}
 
 h2{
     font-size: 35px;
