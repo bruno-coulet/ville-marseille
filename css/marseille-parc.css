@@ -1,0 +1,90 @@
+@font-face {
+    font-family:'kanitBlackItalic' ;
+    src: url('fonts/Kanit-BlackItalic.ttf'),format(truetype);
+}
+
+
+
+
+.info{
+    display:grid;
+    background-color: white;
+    -webkit-box-shadow: 5px 6px 15px 12px #DEF1FF; 
+    box-shadow: 5px 6px 15px 12px #DEF1FF;
+}
+
+.info h1{
+    text-align: center;
+    margin-top: 60px;
+    text-decoration: wavy underline;
+    color: blue;
+    font-family: 'kanitBlackItalic', sans-serif;
+
+}
+
+.backinfo{
+    display: grid;
+}
+
+.open{
+    text-align: left;
+    color:blue;
+}   
+
+.backinfo p {
+    font-family: 'kanitBlackItalic', sans-serif;
+
+}
+
+.presentation{
+    display: grid;
+    border: 2px solid #3498db; /* Bordure solide bleue */
+    border-radius: 10px; /* Rayon des coins pour l'effet arrondi */
+    padding: 20px; /* Ajoutez du rembourrage pour donner de l'espace entre le texte et la bordure */
+    background-color: #ecf0f1; /
+}
+
+.presentation h3{
+    color: blue;
+    font-family: 'kanitBlackItalic', sans-serif;
+}
+
+.presentation h3{
+    font-family: 'kanitBlackItalic', sans-serif;
+}
+
+
+.map{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button{
+    text-decoration: none; 
+    font-size: 16px;
+    text-align: center; 
+    line-height: 16px; 
+    padding: 6px; 
+    border-radius: 10px; 
+    font-family: 'kanitBlackItalic', sans-serif;
+    font-weight: normal; 
+    text-decoration: none;  
+    background-image: linear-gradient(to right, rgb(28, 110, 164) 0%, rgb(35, 136, 203) 50%, rgb(20, 78, 117) 100%); 
+    box-shadow: rgb(222, 241, 255) 5px 6px 15px 12px; 
+    border-top: 2px inset rgb(28, 110, 164); 
+    border-right: none; 
+    border-bottom: none; 
+    border-left: none; 
+    border-image: initial; 
+    display: inline-block;
+}
+
+.button:hover {
+background: #1C6EA4; 
+}
+
+.button:active {
+background: #144E75; 
+}
+
