@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-<script>
+<!-- <script>
   function includeHTML() {
     var z, i, elmnt, file, xhttp;
     /* Loop through a collection of all HTML elements: */
@@ -29,7 +29,7 @@
       }
     }
   }
-  </script>
+  </script> -->
 
 <head>
     <meta charset="UTF-8">
@@ -42,13 +42,79 @@
 
 <body>
 
-    <div w3-include-html="header.html"></div>
+    <!-- <div w3-include-html="header.html"></div> -->
     <!-- <object type="application/html" data="/header.html" width="250" height="200"></object> -->
     <!-- <object data="header.html" width="100%"></object> -->
     <!-- <iframe src="header.html" frameborder="0"></iframe> -->
 
+  <header>
+    <section>
+      <img id="blason" src="img/blason-marseille.jpg" alt="blason de marseille">
+      <div class="titre">
+        <h1>Ville de marseille</h1>
+      </div>
+    </section>
 
-    <main>
+    <nav>
+
+        <ul>
+
+            <li>
+                <a href="index.html">Accueil</a>
+            </li>
+
+            <li>
+                <a href="histoire.html">Histoire</a>
+            </li>
+
+            <li class="dropdown"><a href="plages.html">Plages &ensp;</a>
+                <ul class="sous">
+                    <li>
+                        <a href="plages/catalans.html">Catalans</a>
+                    </li>
+
+                    <li>
+                        <a href="plages/pointe-rouge.html">Pointe rouge</a>
+                    </li>
+
+                    <li>
+                        <a href="plages/prado.html">prado</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="dropdown"><a href="randonnees.html">Randonnées &ensp;</a>
+                <ul class="sous">
+                    <li>
+                        <a href="randonnees/en-vau.html">En vau</a>
+                    </li>
+
+                    <li>
+                        <a href="randonnees/massif-etoile.html">Massif de l'étoile</a>
+                    </li>
+
+                    <li>
+                        <a href="randonnees/sentier-calanques.html">Sentier des calanques</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="musees.html">Musées</a>
+            </li>
+
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+
+          </ul>
+
+    </nav>
+  
+  </header>
+
+
+  <main>
 
       <h1>Randonnées Nature autour de Marseille</h1>
 
@@ -63,53 +129,84 @@
       <p>Les Calanques, fierté de la région, sont une série de criques rocheuses magnifiques qui s'étendent le long de la côte méditerranéenne. Ces formations géologiques uniques offrent un terrain de randonnée diversifié, allant de sentiers côtiers offrant des vues imprenables sur la mer aux randonnées plus escarpées menant à des criques isolées. Parmi les itinéraires les plus populaires, citons la randonnée depuis Cassis jusqu'à Calanque d'En-Vau, offrant des panoramas à couper le souffle.</p>
 
       <h2>Parc National des Calanques</h2>
+
       <figure>
         <img class="standard" src="img/calanques/parc-calanques.jpg" alt="Parc national des calanques">
       </figure>
       <p>Explorez le premier parc national périurbain d'Europe, le Parc National des Calanques, qui s'étend sur plus de 500 kilomètres carrés. Des sentiers balisés vous guideront à travers des forêts de pins, des falaises calcaires et des panoramas marins éblouissants. Que vous soyez amateur de faune et de flore ou simplement à la recherche d'un bon exercice, ce parc national offre une expérience unique.</p>
 
       <h2>La Chaîne de l'Étoile</h2>
+
       <figure>
         <img class="standard" src="img/randonnees/cezanne-etoile.jpg" alt="Chaine de l'étoile par Cézanne">
       </figure>
 
 
       <p>Pour une escapade plus montagneuse, tournez-vous vers la Chaîne de l'Étoile, située à l'arrière-pays de Marseille. Des sentiers bien entretenus serpentent à travers les collines, offrant des vues spectaculaires sur la ville et la mer au fur et à mesure de votre ascension. C'est l'endroit idéal pour les randonneurs cherchant à se perdre dans la nature sans s'éloigner trop de la ville.</p>
+     
+      <aside>
 
-      <h2> Conseils pratiques</h2>
+        <h2> Conseils pratiques</h2>
 
-      <ul>
-        <li><strong>Équipement :</strong> Assurez-vous d'avoir des chaussures de randonnée confortables, de l'eau en quantité suffisante, et des vêtements adaptés à la météo.</li>
-        <li><strong>Saison :</strong>Les Calanques peuvent être fréquentées toute l'année, mais évitez les mois de juillet et août, période de chaleur intense.</li>
-        <li><strong>Respect de l'environnement :</strong>Protégez la beauté naturelle de la région en suivant les sentiers désignés et en respectant la faune et la flore locales.</li>
-      </ul>
+        <ul>
+          <li><strong>Équipement :</strong> Assurez-vous d'avoir des chaussures de randonnée confortables, de l'eau en quantité suffisante, et des vêtements adaptés à la météo.</li>
+          <li><strong>Saison :</strong>Les Calanques peuvent être fréquentées toute l'année, mais évitez les mois de juillet et août, période de chaleur intense.</li>
+          <li><strong>Respect de l'environnement :</strong>Protégez la beauté naturelle de la région en suivant les sentiers désignés et en respectant la faune et la flore locales.</li>
+        </ul>
+
+      </aside>
 
       <p>Marseille offre une véritable aventure pour les amateurs de plein air. Que vous cherchiez une randonnée relaxante avec des vues imprenables ou une aventure plus intense à travers des terrains variés, les sentiers de Marseille sauront satisfaire votre soif d'exploration. Prenez votre équipement, sortez explorer, et découvrez la nature spectaculaire qui entoure cette ville méditerranéenne unique.</p>
       
-      <h2>Liste des randonnées</h2>
-      <ul>
-          <li>
-            <strong>Randonnée 1:</strong><a href="randonnees/sentier-calanques.html" target="_blank">Sentier des Calanques</a>
-            <img class="mini" src="img/randonnees/randonnee-callelongue.jpg" alt="randonnée à Callelongue"></li>
-          <li>
-            <strong>Randonnée 2:</strong><a href="randonnees/massif-etoile.html" target="_blank">Massif de l'Etoile</a>
-            <img class="mini" src="img/randonnees/chaine-etoile.webp" alt="randonnée sue la chaîne de l'étoile"></li>
-          <li>
-            <strong>Randonnée 3:</strong><a href="randonnees/en-vau.html" target="_blank">En vau</a>
-            <img class="mini" src="img/randonnees/randonnee-en-vau.jpg" alt="randonnée à la calanque d'en vau">
-          </li>
-        
-      </ul>
+      <section class="rando">
 
-</main>
+        <h2>Liste des randonnées</h2>
+
+        <ul>
+
+            <li>
+              <!-- <strong>Randonnée 1:</strong> -->
+              <figure>
+                <figcaption> 
+                  <a href="randonnees/sentier-calanques.html" target="_blank">Sentier des Calanques</a>
+                  <p>Holala cette randonnée. Vous m'en direz des nouvelles !</p>
+                </figcaption>
+                <img class="mini" src="img/randonnees/randonnee-callelongue.jpg" alt="randonnée à Callelongue">
+              </figure>
+            </li>
+
+            <li>
+              <!-- <strong>Randonnée 2:</strong> -->
+              <figure>
+                <figcaption>
+                  <a href="randonnees/massif-etoile.html" target="_blank">Massif de l'Etoile</a>
+                  <p>Mais attendez, celle-ci est encore bien mieux !</p>
+                </figcaption>
+                  <img class="mini" src="img/randonnees/chaine-etoile.webp" alt="randonnée sue la chaîne de l'étoile">
+              </figure>
+            </li>
+
+            <li>
+              <!-- <strong>Randonnée 3:</strong> -->
+              <figure>
+                <figcaption>
+                  <a href="randonnees/en-vau.html" target="_blank">En vau</a>
+                  <p>PFFIOU ! Mais alors là c'est le top du top !</p>
+                </figcaption>
+                <img class="mini" src="img/randonnees/randonnee-en-vau.jpg" alt="randonnée à la calanque d'en vau">
+              </figure>
+            </li>
+          
+        </ul>
+      </section>
+
+  </main>
 
 
-<div w3-include-html="footer.html"></div>
-
-
+<!-- <div w3-include-html="footer.html"></div>
 <script>
 includeHTML();
-</script>
+</script> -->
 
 </body>
 </html>
