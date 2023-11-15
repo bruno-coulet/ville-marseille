@@ -1,0 +1,139 @@
+
+/*banderole*/
+.Band {
+    width: 100%;
+    height: auto;
+}
+    
+.Presentation h1 {
+    text-align: center;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+.Presentation h2 {
+    text-align: center;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+.Presentation p {
+    text-align: center;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+
+/*  BOUTON READ MORE   ---DEBUT  */
+.read-more-state {
+    display: none;
+  }
+  
+  .read-more-target {
+    opacity: 0;
+    max-height: 0;
+    font-size: 0;
+    transition: .25s ease;
+  }
+  
+  .read-more-state:checked ~ .read-more-wrap .read-more-target {
+    opacity: 1;
+    font-size: inherit;
+    max-height: 999em;
+    min-height: 7rem;
+  }
+
+  .read-more-wrap{
+    min-height: 6.5rem;
+  }
+  
+  .read-more-state ~ .read-more-trigger:before {
+    content: 'Voir plus';
+  }
+  
+  .read-more-state:checked ~ .read-more-trigger:before {
+    content: 'Réduire';
+  }
+  
+  .read-more-trigger {
+    text-align:center;
+    cursor: pointer;
+    display: block;
+    width:5rem;
+    margin:auto;
+    padding: 0 .5em;
+    color: #BE9149;
+    font-weight: bold;
+    line-height: 2;
+    border: 1px solid #BE9149;
+    border-radius: .25em;
+  }
+  .read-more-trigger:hover{
+    color: #C94C5E;
+  }
+/*  BOUTON READ MORE  -- FIN  */
+.services {
+    display: flex;
+    flex-direction: row; /* Affichage en ligne plutôt qu'en colonnes */
+    justify-content: space-evenly;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    list-style: none;
+    padding: 0;
+}
+
+.services li {
+    width: 30%; /* Ajustez la largeur selon vos besoins */
+    margin-bottom: 20px;
+}
+/* Style pour les détails (initialement cachés) */
+.details {
+    display: none;
+    margin-top: 5px;
+    max-height: 0;
+    overflow-y: hidden;
+    transition: max-height 0.3s ease-out; /* Animation pour une transition en douceur */
+}
+
+
+/* Style pour le changement de couleur au survol */
+.info-block:hover {
+    background-color: #f0f0f0;
+}
+
+/* Style pour rendre les détails visibles lorsqu'ils sont activés */
+.info-block:hover .details {
+    display: block;
+    max-height: 10000px; /* Une valeur suffisamment grande pour permettre à tout le contenu d'être visible */
+}
+
+.contart {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.contart .article img {
+    width: 300px;
+    height: auto;
+}
+
+
+/* Style pour le bloc point d'intérets */
+        .point {
+            width: 100%;
+            overflow: hidden; 
+        }
+
+        .point img {
+            margin-left: 100px;
+            width: 300px; 
+            height: auto;
+        }
+
+        .point-text {
+            float: right;
+            width: 50%;
+        }
+
+
