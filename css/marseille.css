@@ -67,9 +67,22 @@ header{
     color: whitesmoke;
     margin-bottom: 3rem;
 }
+@media screen and (max-width:768px) {
+    header{
+        height: 250px;
+    }
+    
+}
+
+
+
 #blason {
     width: 150px;
     position: absolute;
+}
+@media screen and (max-width:768px) {
+    #blason{position: relative;}
+    
 }
 header section{
     display: flex;
@@ -79,12 +92,17 @@ header section{
     width: 100%;
     height:99px;
 }
+@media screen and (max-width:768px) {
+    header section{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
 
 header .titre {
    
     flex-grow: 1;
-    /* width: 100%;
-    text-align: center; */
 }
 @media screen (max-width:700px){
     header .titre {
@@ -96,6 +114,13 @@ header .titre h1{
     color: whitesmoke;
     margin: 2rem 0;
 }
+
+/*   La navigation desktop s'affiche uniquement au dela de 767px de large   */
+
+@media (max-device-width:767px) {
+    nav.desktop{display:none;}
+}
+
 
 nav{
     width: 100%;
@@ -174,6 +199,68 @@ nav > ul li:hover .sous{
   margin: 50px 20px;
   height: 1500px;
 }
+
+
+
+
+
+/*  Burger -    début   */
+
+/*   Le burger s'affiche uniquement en dessous de 768px de large   */
+
+@media  (min-device-width:768px) {
+    nav.phone {
+        display:none;
+    }
+}
+
+
+* {
+    box-sizing: border-box;
+  }
+  
+  .burger {
+    display: none;
+  }
+  
+  .burger:checked ~ .burger-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .hamburger {
+    display:block;
+    width: 3.4em;
+    height: 2.4em;
+    line-height: .1em;
+    border: 0.1em solid whitesmoke;
+    padding: .4em .4em .4em;
+  }
+  
+  .hamburger hr {
+    color: #ddd;
+    height: .1em;
+    border: 0;
+    background: whitesmoke;
+    border: none;
+  }
+  
+  .burger-menu {
+     display:none;
+  }
+
+  nav.phone a{
+    display:flex; /* aligne les lien sur la gauche*/
+    margin-left:2rem;
+  }
+/*  Burger -    fin   */
+
+
+
+
+
+
 
 
 
