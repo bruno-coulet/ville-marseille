@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/contact.css">
+</head>
+
+<body>
+    <header>
+        <section>
+            <img id="blason" src="img/blason-marseille.jpg" alt="blason de marseille">
+            <div class="titre">
+                <h1>Ville de Marseille</h1>
+            </div>
+        </section>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="histoire.html">Histoire</a></li>
+                <li class="dropdown"><a href="plages.html">Plages &ensp;</a>
+                    <ul class="sous">
+                        <li><a href="plages/catalans.html">Catalans</a></li>
+                        <li><a href="plages/pointe-rouge.html">Pointe rouge</a></li>
+                        <li><a href="plages/prado.html">Prado</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="randonnees.html">Randonnées &ensp;</a>
+                    <ul class="sous">
+                        <li><a href="randonnees/en-vau.html">En Vau</a></li>
+                        <li><a href="randonnees/massif-etoile.html">Massif de l'étoile</a></li>
+                        <li><a href="randonnees/sentier-calanques.html">Sentier des calanques</a></li>
+                    </ul>
+                </li>
+                <li><a href="musees.html">Musées</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="formulaire">
+        <div class="container">
+            <h1>Contactez-nous</h1>
+            <form action="#" method="post">
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <input type="submit" value="Envoyer">
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
