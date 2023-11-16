@@ -1,0 +1,234 @@
+
+
+
+/*  BOUTON READ MORE   ---DEBUT  */
+.read-more-state {
+    display: none;
+  }
+  
+  .read-more-target {
+    opacity: 0;
+    max-height: 0;
+    font-size: 0;
+    transition: .25s ease;
+  }
+  
+  .read-more-state:checked ~ .read-more-wrap .read-more-target {
+    opacity: 1;
+    font-size: inherit;
+    max-height: 999em;
+    min-height: 7rem;
+  }
+
+  .read-more-wrap{
+    min-height: 6.5rem;
+  }
+  
+  .read-more-state ~ .read-more-trigger:before {
+    content: 'Voir plus';
+  }
+  
+  .read-more-state:checked ~ .read-more-trigger:before {
+    content: 'Réduire';
+  }
+  
+  .read-more-trigger {
+    text-align:center;
+    cursor: pointer;
+    display: block;
+    width:5rem;
+    margin:auto;
+    padding: 0 .5em;
+    color: #BE9149;
+    font-weight: bold;
+    line-height: 2;
+    border: 1px solid #BE9149;
+    border-radius: .25em;
+  }
+  .read-more-trigger:hover{
+    color: #C94C5E;
+  }
+/*  BOUTON READ MORE  -- FIN  */
+/* Variables de couleur */
+:root {
+  --primary-color: #3498db; /* Couleur principale (modifiable) */
+  --secondary-color: rgb(65, 128, 128); /* Couleur secondaire (modifiable) */
+  --third-color: #9cc6d6; /* Couleur tertiaire (modifiable) */
+}
+
+/* Banderole */
+.Band {
+  width: 100%;
+  height: auto;
+}
+
+/* Présentation */
+.Presentation h1,
+.Presentation h2,
+.Presentation p {
+  text-align: center;
+  margin: 1px;
+}
+
+/* Bouton Read More */
+.read-more-state {
+  display: none;
+}
+
+.read-more-target {
+  opacity: 0;
+  max-height: 0;
+  font-size: 0;
+  transition: .25s ease;
+}
+
+.read-more-state:checked ~ .read-more-wrap .read-more-target {
+  opacity: 1;
+  font-size: inherit;
+  max-height: 999em;
+  min-height: 7rem;
+}
+
+.read-more-wrap {
+  min-height: 6.5rem;
+}
+
+.read-more-state ~ .read-more-trigger:before {
+  content: 'Voir plus';
+}
+
+.read-more-state:checked ~ .read-more-trigger:before {
+  content: 'Réduire';
+}
+
+.read-more-trigger {
+  text-align: center;
+  cursor: pointer;
+  display: block;
+  width: 5rem;
+  margin: auto;
+  padding: 0 .5em;
+  color: #BE9149;
+  font-weight: bold;
+  line-height: 2;
+  border: 1px solid #BE9149;
+  border-radius: .25em;
+}
+
+.read-more-trigger:hover {
+  color: #C94C5E;
+}
+
+/* Contart Section Styles */
+.contart {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap; /* Permet de passer à une disposition en colonnes sur les petits écrans */
+}
+
+.contart .article {
+  max-width: 300px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contart .article img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.contart .article h2 {
+  font-size: 1.5em;
+  margin: 15px;
+}
+
+.contart .article p {
+  color: #555;
+  margin: 0 15px 15px 15px;
+}
+
+/* Services */
+.services {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  list-style: none;
+  padding: 0;
+}
+
+.services li {
+  width: 30%;
+  margin-bottom: 20px;
+}
+
+/* Détails */
+.details {
+  display: none;
+  margin-top: 5px;
+  max-height: 0;
+  overflow-y: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+/* Changement de couleur au survol */
+.info-block:hover {
+  background-color: #f0f0f0;
+}
+
+/* Rendre les détails visibles lorsqu'ils sont activés */
+.info-block:hover .details {
+  display: block;
+  max-height: 10000px;
+}
+
+/* Contart (Articles) */
+.Articles, .contart {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 20px;
+}
+
+/* Articles */
+.Articles h1,
+.Articles p {
+  color: #fff;
+}
+
+/* Actualites */
+.Actualites {
+  background-color: var(--secondary-color);
+  color: #fff;
+  padding: 20px;
+}
+
+/* Actualites h1, p */
+.Actualites h1,
+.Actualites p {
+  color: #fff;
+}
+
+/* Ville et point */
+.Ville, .point {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 20px;
+}
+
+/* Point */
+.point img {
+  margin-left: 100px;
+  width: 300px;
+  height: auto;
+}
+
+.point-text {
+  float: right;
+  width: 50%;
+}
+
