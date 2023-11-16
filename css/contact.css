@@ -1,74 +1,117 @@
 /* Réinitialisation des styles par défaut */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Style pour le formulaire de contact */
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f8f8;
-  }
-  
-  .container {
-    max-width: 800px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  h1 {
-    text-align: center;
-    color: #333;
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  label {
-    font-size: 16px;
-    margin-bottom: 8px;
-  }
-  
-  input[type="text"],
-  input[type="email"],
-  textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    transition: border-color 0.3s;
-  }
-  
-  input[type="text"]:focus,
-  input[type="email"]:focus,
-  textarea:focus {
-    border-color: #4CAF50;
-  }
-  
-  textarea {
-    height: 150px;
-  }
-  
-  input[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  input[type="submit"]:hover {
-    background-color: #45a049;
-  }
-  
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style pour le formulaire de contact */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border-color: #4CAF50;
+}
+
+textarea {
+  height: 150px;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Style pour le conteneur principal */
+.container-main {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Permet le retour à la ligne si l'espace est insuffisant */
+}
+
+/* Style pour la section des informations de contact */
+.contact-info {
+  flex-basis: calc(50% - 10px); /* Utilisation de flex-basis pour définir la largeur des éléments avec espace entre eux */
+  margin-bottom: 20px; /* Ajout de marges pour un meilleur espacement entre les éléments */
+}
+
+.contact-info .container {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.contact-info h2 {
+  text-align: center;
+  color: #333;
+}
+
+.contact-info p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* Style pour l'image de la carte statique */
+.map-image {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+/* Ajustement de la marge pour la section du formulaire */
+.formulaire {
+  flex-basis: calc(50% - 10px); /* Utilisation de flex-basis pour définir la largeur des éléments avec espace entre eux */
+}

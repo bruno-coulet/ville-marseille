@@ -5,41 +5,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/contact.css">
-    <link rel="stylesheet" href="css/fo">
+    <link  type="text/css" rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/marseille.css">
 </head>
 
-<body>
-    <header>
-        <section>
-            <img id="blason" src="img/blason-marseille.jpg" alt="blason de marseille">
-            <div class="titre">
-                <h1>Ville de Marseille</h1>
-            </div>
-        </section>
+<header>
+    <section>
+      <img id="blason" src="img/blason-marseille.jpg" alt="blason de marseille">
+      <div class="titre">
+        <h1>Ville de marseille</h1>
+      </div>
+    </section>
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="histoire.html">Histoire</a></li>
-                <li class="dropdown"><a href="plages.html">Plages &ensp;</a>
-                    <ul class="sous">
-                        <li><a href="plages/catalans.html">Catalans</a></li>
-                        <li><a href="plages/pointe-rouge.html">Pointe rouge</a></li>
-                        <li><a href="plages/prado.html">Prado</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown"><a href="randonnees.html">Randonnées &ensp;</a>
-                    <ul class="sous">
-                        <li><a href="randonnees/en-vau.html">En Vau</a></li>
-                        <li><a href="randonnees/massif-etoile.html">Massif de l'étoile</a></li>
-                        <li><a href="randonnees/sentier-calanques.html">Sentier des calanques</a></li>
-                    </ul>
-                </li>
-                <li><a href="musees.html">Musées</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav>
+
+        <ul>
+
+            <li>
+                <a href="index.html">Accueil</a>
+            </li>
+
+            <li>
+                <a href="histoire.html">Histoire</a>
+            </li>
+
+            <li class="dropdown"><a href="plages.html">Plages &ensp;</a>
+                <ul class="sous">
+                    <li>
+                        <a href="catalans.html">Catalans</a>
+                    </li>
+
+                    <li>
+                        <a href="pointe-rouge.html">Pointe rouge</a>
+                    </li>
+
+                    <li>
+                        <a href="prado.html">prado</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="dropdown"><a href="randonnees.html">Randonnées &ensp;</a>
+                <ul class="sous">
+                    <li>
+                        <a href="en-vau.html">En vau</a>
+                    </li>
+
+                    <li>
+                        <a href="massif-etoile.html">Massif de l'étoile</a>
+                    </li>
+
+                    <li>
+                        <a href="sentier-calanques.html">Sentier des calanques</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="musees.html">Musées</a>
+            </li>
+
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+
+          </ul>
+
+    </nav>
+  
+</header>
+<body>
+    <section class="contact-info">
+        <div class="container">
+            <h2>Coordonnées</h2>
+            <p><strong>Adresse :</strong> 123 Rue de la Mairie, 13000 Marseille</p>
+            <p><strong>Téléphone :</strong> +33 1 23 45 67 89</p>
+            <!-- Ajoutez d'autres informations de contact ici -->
+
+            <!-- Image statique pour la localisation -->
+            <img src="img/contact/contact.jpeg" alt="Localisation de la mairie" class="map-image">
+        </div>
+    </section>
 
     <section class="formulaire">
         <div class="container">
@@ -59,5 +106,44 @@
         </div>
     </section>
 </body>
+<footer>
+    <nav class="footer1">
+
+        <ul>
+            
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">Histoire</a></li>
+            <li><a href="plages.html">Plages</a></li>
+            <li><a href="randonnees.html">Randonnées</a> </li>
+            <li><a href="musees.html">Musées</a></li>
+            <li><a href="#">Contact</a>
+        </ul>
+
+        <ul>
+            <li><h3>Adresse</h3>
+                2 Pl. François Mireur, 13001 Marseille
+            </li>
+
+            <li><h3>Contact</h3>
+                04 91 55 15 69
+            </li>
+            
+            <li><h3>Horaires</h3>
+                Du Lundi au Vendredi de 8h30 à 16h30
+            </li>
+
+            <li>
+                <img src="img/blason-marseille-original.jpg" alt="blason-marseille">
+            </li>
+            
+        </ul>
+
+
+            
+        
+        
+    </nav>
+    
+</footer>
 
 </html>
