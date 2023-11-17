@@ -67,15 +67,6 @@ header{
     color: whitesmoke;
 
 }
-@media screen and (max-width:768px) {
-    header{
-        height: 250px;
-    }
-    
-}
-
-
-
 #blason {
     width: 150px;
     position: absolute;
@@ -96,6 +87,7 @@ header section{
     header section{
         display: flex;
         flex-direction: column;
+        height:auto;
     }
     
 }
@@ -104,11 +96,7 @@ header .titre {
    
     flex-grow: 1;
 }
-@media screen (max-width:700px){
-    header .titre {
-        
-    }
-}
+
 
 header .titre h1{
     color: whitesmoke;
@@ -116,7 +104,6 @@ header .titre h1{
 }
 
 /*   La navigation desktop s'affiche uniquement au dela de 767px de large   */
-
 @media (max-device-width:767px) {
     nav.desktop{display:none;}
 }
@@ -125,12 +112,15 @@ header .titre h1{
 nav{
     width: 100%;
     margin: 0 auto;
-    position: sticky;
+    /* position: sticky; */
     top: 0px;
     display: flex;
     flex-wrap: nowrap;
+    justify-content: center;    /*     pour le burger */
     padding: 1rem 0;
-    border: 1px solid #2196f3;
+}
+@media (max-device-width:767px) {
+    nav{width:auto;}
 }
 
 nav ul{
@@ -206,11 +196,10 @@ nav > ul li:hover .sous{
 
 /*  Burger -    début   */
 
-/*   Le burger s'affiche uniquement en dessous de 768px de large   */
 
 @media  (min-device-width:768px) {
     nav.phone {
-        display:none;
+        display:none;       /*   Le burger s'affiche uniquement en dessous de 768px de large   */
     }
 }
 
@@ -220,30 +209,37 @@ nav > ul li:hover .sous{
   }
   
   .burger {
-    display: none;
+    display: none;  /*   Par défaut, le menu burger ne se développe pas   */
   }
   
-  .burger:checked ~ .burger-menu {
+  .burger:checked ~ .burger-menu {  /*  on clic le menu burger se développe   */
     display: flex;
     flex-direction: column;
     align-items: flex-start;
   }
   
   .hamburger {
-    display:block;
+    display: block;
     width: 3.4em;
     height: 2.4em;
     line-height: .1em;
     border: 0.1em solid whitesmoke;
-    padding: .4em .4em .4em;
+    padding: 0.25em 0.4em 0.4em;
+  }
+  .hamburger:hover{
+    border-color: orange;
   }
   
   .hamburger hr {
     color: #ddd;
-    height: .1em;
+    height: 0.2em;
     border: 0;
     background: whitesmoke;
     border: none;
+    margin: 0.3rem 0 0.2rem 0;
+  }
+  .hamburger hr:hover{
+    background: orange;
   }
   
   .burger-menu {
@@ -252,6 +248,7 @@ nav > ul li:hover .sous{
 
   nav.phone a{
     display:flex; /* aligne les lien sur la gauche*/
+    
     margin-left:2rem;
   }
 /*  Burger -    fin   */
