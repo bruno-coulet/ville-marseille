@@ -9,7 +9,9 @@
     <link  type="text/css" rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
 </head>
+
 <header>
+    
     <section>
       <img id="blason" src="img/blason-marseille.svg.png" alt="blason de marseille">
       <div class="titre">
@@ -18,7 +20,15 @@
     </section>
 
     <nav>
-        <ul>
+        <input type="checkbox" id="burger" class="burger">  <!-- checkbox commande l'affichage de la ul sur petit écran -->
+
+        <label for="burger" class="hamburger">              <!-- burger menu apparait sur petit écran-->
+            <hr/>
+            <hr/>
+            <hr/>
+        </label>
+
+        <ul>                                                 <!-- ul  en ligne sur écran large, en colonne sur petit écran-->
             <li>
                 <a href="index.html">Accueil</a>
             </li>
@@ -28,15 +38,13 @@
             </li>
 
             <li class="dropdown"><a href="plages.html">Plages &ensp;</a>
-                <ul class="sous">
+                <ul class="sous-menu">
                     <li>
                         <a href="catalans.html">Catalans</a>
                     </li>
-
                     <li>
                         <a href="pointe-rouge.html">Pointe rouge</a>
                     </li>
-
                     <li>
                         <a href="prado.html">prado</a>
                     </li>
@@ -44,15 +52,13 @@
             </li>
 
             <li class="dropdown"><a href="randonnees.html">Randonnées &ensp;</a>
-                <ul class="sous">
+                <ul class="sous-menu">
                     <li>
                         <a href="en-vau.html">En vau</a>
                     </li>
-
                     <li>
                         <a href="massif-etoile.html">Massif de l'étoile</a>
                     </li>
-
                     <li>
                         <a href="sentier-calanques.html">Sentier des calanques</a>
                     </li>
@@ -70,10 +76,14 @@
             <li>
                 <a href="contact.html">Contact</a>
             </li>
+
           </ul>
+
     </nav>
   
 </header>
+
+
 <body>
     <div class="Band">
         <img src="img/home/home.jpeg" alt="banderole de marseille" class="Band">

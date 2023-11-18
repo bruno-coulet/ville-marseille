@@ -1,0 +1,162 @@
+nav{
+    width: 100%;
+    margin: 0 auto;
+    top: 0px;
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 1rem 0;
+}
+
+
+nav ul{
+    list-style-type: none;
+    width: 100%;
+    display: flex;  
+}
+
+nav ul li{
+    float: left;
+    width: 25%;
+    text-align: center;
+    position: relative;
+}
+
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    color: whitesmoke;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px;
+}
+
+nav a:hover{
+    color: orange;
+    border-bottom: 2px solid gold;
+}
+
+.sous-menu{                                 /*        sous-menu  masqué par défaut   */
+    display: none;
+    box-shadow: 0px 1px 2px orange;
+    background-color: rgb(72, 97, 199);
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+nav > ul li:hover .sous-menu{               /*  hover : affiche le sous-menu     */
+    display: block;
+}
+.sous-menu li{
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+.sous-menu a{
+    text-align: left;
+    padding: 10px;
+    border-bottom: none;   
+}
+.sous-menu a:hover{
+    border-bottom: none;
+    background-color: RGBa(200,200,200,0.1);
+}
+.dropdown > a::after{
+    content:" ▼";
+    font-size: 12px;
+}
+
+.conteneur{                     /*       Je ne sais pas qui a mis ça          */
+  margin: 50px 20px;
+  height: 1500px;
+}
+
+
+
+/*  Burger -    début   */
+* {
+    box-sizing: border-box;
+  }
+  
+  .burger {
+    display: none;                  /*  la checkbox n'est pas affichée, on peut cliquer dessus pour afficher la ul */
+  }
+  
+  .burger:checked ~ ul {        /*  clic sur la checkbox, la ul s'affiche */
+    display: flex;
+    /* flex-direction: column;
+    align-items: flex-start; */
+  }
+  
+  .hamburger {
+    display: block;
+    width: 3.4em;
+    height: 2.4em;
+    line-height: .1em;
+    border: 0.1em solid whitesmoke;
+    padding: 0.25em 0.4em 0.4em;
+    margin: 0 3vw 0 0;
+  }
+  .hamburger:hover{
+    border-color: orange;
+  }
+
+  .hamburger hr {
+    /* color: #ddd; */
+    height: 0.2em;
+    border: 0;
+    background: whitesmoke;
+    border: none;
+    margin: 0.3rem 0 0.2rem 0;
+  }
+  .hamburger:hover > hr{
+    background: orange;
+  }
+  
+
+@media (min-device-width:768px) { .hamburger{display:none} }    /*   Le burger ne s'affiche pas sur écran large   */
+
+@media (max-device-width:767px) {                              /*   Le burger s'affiche sur petit écran    */
+
+
+    #blason{                    /*  la section supérieur se met en colonne  */
+        position: relative;
+        margin:0
+    }
+
+    header section{             /*  la section supérieur se met en colonne  */
+        flex-direction: column;
+        height:auto;
+    }
+
+    nav{
+        width:auto;
+        justify-content: center;
+    }
+
+    nav ul{ 
+        flex-direction:column; /*  la liste est en colonne sur petit écran */
+        display: none;         /*  par défaut la ul n'est pas affichée, il faut cliquer pour l'afficher */
+        margin:0;
+        width:auto;  
+     }
+
+
+    /* nav > ul li:hover */
+        .sous-menu {      /*  affiche les sous-menu sur petit écran */
+        display: block ;  
+        position: static;               /*    corrige la position     */
+        width: max-content;
+    }
+}
+    
+
+
+
+/*  Burger -    fin   */
+
+
