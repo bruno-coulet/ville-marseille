@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/marseille.css">
     <link rel="stylesheet" href="css/marseille-sentier.css">
+    <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/footer.css">
     <title>Sentier des Calanques</title>
 </head>
@@ -24,9 +25,15 @@
         </section>
     
         <nav>
-    
-            <ul>
-    
+            <input type="checkbox" id="burger" class="burger">  <!-- checkbox commande l'affichage de la ul sur petit écran -->
+
+            <label for="burger" class="hamburger">              <!-- burger menu apparait sur petit écran-->
+                <hr/>
+                <hr/>
+                <hr/>
+            </label>
+
+            <ul>                                                 <!-- ul  en ligne sur écran large, en colonne sur petit écran-->
                 <li>
                     <a href="index.html">Accueil</a>
                 </li>
@@ -36,15 +43,13 @@
                 </li>
     
                 <li class="dropdown"><a href="plages.html">Plages &ensp;</a>
-                    <ul class="sous">
+                    <ul class="sous-menu">
                         <li>
                             <a href="catalans.html">Catalans</a>
                         </li>
-    
                         <li>
                             <a href="pointe-rouge.html">Pointe rouge</a>
                         </li>
-    
                         <li>
                             <a href="prado.html">prado</a>
                         </li>
@@ -52,15 +57,13 @@
                 </li>
     
                 <li class="dropdown"><a href="randonnees.html">Randonnées &ensp;</a>
-                    <ul class="sous">
+                    <ul class="sous-menu">
                         <li>
                             <a href="en-vau.html">En vau</a>
                         </li>
-    
                         <li>
                             <a href="massif-etoile.html">Massif de l'étoile</a>
                         </li>
-    
                         <li>
                             <a href="sentier-calanques.html">Sentier des calanques</a>
                         </li>
@@ -69,6 +72,10 @@
     
                 <li>
                     <a href="musees.html">Musées</a>
+                </li>
+    
+                <li>
+                    <a href="parcs.html">Parcs</a>
                 </li>
     
                 <li>
