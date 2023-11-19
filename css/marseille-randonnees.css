@@ -9,21 +9,25 @@
 }
 .rando figure{
     display: flex;
-    justify-content: space-between;
-
 }
 .rando figcaption{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-right: 2rem;
+    width: 20vw;
 }
 .rando a{
     margin-bottom: 1rem;
+    width: fit-content;
 }
 
+figure a{
+    transition: transform 0.3s ease-in-out;     /*      Animation des photos de rando : durée et fondu   */
+}
 
-
+figure a:hover{
+    transform: scale(1.05);                     /*      Animation des photos de rando  : agrandissement */
+}
 
 @media screen and (max-device-width:768px) {
 
