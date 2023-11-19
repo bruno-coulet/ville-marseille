@@ -4,18 +4,41 @@
     align-items: center;
     width: fit-content;
     margin: 2rem auto;
+    padding-top: 3rem;
+    border-top: 2px solid #0A6DAA;
 }
 .rando figure{
     display: flex;
     justify-content: space-between;
-    width: 40vw;
+
 }
 .rando figcaption{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 15rem;
+    margin-right: 2rem;
 }
 .rando a{
     margin-bottom: 1rem;
+}
+
+
+
+
+@media screen and (max-device-width:768px) {
+
+    .rando figure{
+        flex-direction: column;
+ 
+    }
+
+    .rando figcaption{
+        width: auto;
+        margin-right: 0;
+    }
+
+    .rando figcaption > *{
+        margin: 1rem 0;
+    }
+    
 }

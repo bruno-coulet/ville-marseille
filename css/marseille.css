@@ -6,7 +6,7 @@
 
 a{   text-decoration: none;}
 
-iframe{   width:100%;}
+/* iframe{   width:100%;} */
 
 
 
@@ -36,6 +36,7 @@ h2{    font-size: 35px;}
 p{
     font-family: martel;
     font-size: 15px;
+    text-align: justify;
 }
 ul{    list-style: none;}
 
@@ -92,12 +93,40 @@ figure{
     justify-content: space-between;
     width: 100%;
 }
+figure img {        /*      Pour les bandeaux des pages de bruno     */
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    box-shadow:  20px 20px 60px #686767;
+}
+
 img.standard{
     width:50vw;
-    margin:auto;
     margin: 0 auto 2rem;
+
 }
 img.mini{
-    width:25vw;
+    width:60%;
+    height: auto;
+}
 
+
+
+
+img.standard, img.mini{
+    border-radius: 10px;
+    background: #e0e0e0;
+    box-shadow:  20px 20px 60px #bebebe,
+                 -20px -20px 60px #ffffff;
+}
+
+@media screen and (max-device-width:768px) {
+    img.standard{
+        width:80vw;
+        margin: 2rem auto;
+    }
+    img.mini{
+        width:80vw;
+    }
+    
 }
