@@ -16,6 +16,9 @@
     justify-content: center;
     width: 20vw;
 }
+figcaption p{
+    width: 14rem;
+}
 .rando a{
     margin-bottom: 1rem;
     width: fit-content;
@@ -33,7 +36,6 @@ figure a:hover{
 
     .rando figure{
         flex-direction: column;
- 
     }
 
     .rando figcaption{
@@ -44,5 +46,9 @@ figure a:hover{
     .rando figcaption > *{
         margin: 1rem 0;
     }
-    
+    figcaption p{                           /*   arrange le teaser des randos    */
+        width: auto;
+        padding-bottom: 1rem;
+    }
+
 }
